@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>온워드 ONWARD | 보호자를 위한 반려견 용품 셀렉션</title>
+<meta name="description" content="믿을 수 있는 반려견 용품만 고르는 큐레이션 브랜드 온워드. 산책, 안전, 휴식을 위한 셀렉션을 만나보세요.">
+<meta name="keywords" content="반려견 용품, 강아지 산책용품, 강아지 하네스, 반려견 큐레이션, 온워드">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ONWARD — Onward, Together.">
+<meta property="og:description" content="믿을 수 있는 반려견 용품만 고르는 큐레이션 브랜드 온워드.">
+<meta property="og:image" content="https://dog.chatbotai.co.kr/assets/walk-sunset.jpg">
+<meta property="og:url" content="https://dog.chatbotai.co.kr/">
+<link rel="canonical" href="https://dog.chatbotai.co.kr/">
+<meta property="og:locale" content="ko_KR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232F4A3A'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23F5EFE6' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23C8754B'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2F4A3A; --green-d:#243a2d; --beige:#F5EFE6; --beige-d:#ECE3D6;
+  --white:#FFFFFF; --terra:#C8754B; --terra-d:#b3633c; --ink:#2B2B2B;
+  --mute:#6f6a62; --line:rgba(43,43,43,.12);
+  --serif:"Instrument Serif", "Times New Roman", serif;
+  --sans:"Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", sans-serif;
+  --pad:clamp(20px,5vw,72px);
+  --max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-family:var(--serif);font-style:italic;font-size:20px;letter-spacing:.01em;color:var(--terra);display:block;margin-bottom:14px}
+h2.title{font-size:clamp(28px,4.2vw,46px);font-weight:600;letter-spacing:-.03em;line-height:1.3;text-wrap:balance}
+.btn{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 28px;border-radius:999px;font-weight:600;font-size:16px;letter-spacing:-.01em;border:0;cursor:pointer;transition:background .25s,transform .25s,color .25s}
+.btn-terra{background:var(--terra);color:#fff}
+.btn-terra:hover{background:var(--terra-d)}
+.btn .arr{transition:transform .25s}
+.btn:hover .arr{transform:translateX(4px)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* Header */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:50;height:68px;display:flex;align-items:center;transition:background .35s,box-shadow .35s,color .35s;color:#fff}
+.hdr.solid{background:rgba(245,239,230,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.hdr .wrap{width:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.24em;font-size:19px;display:flex;align-items:center;gap:10px}
+.logo i{width:9px;height:9px;border-radius:50%;background:var(--terra);display:inline-block}
+.nav{display:flex;align-items:center;gap:34px;font-size:15px;font-weight:500}
+.nav a{opacity:.85;transition:opacity .2s}
+.nav a:hover{opacity:1}
+.nav .store{opacity:1;border:1px solid currentColor;padding:7px 16px;border-radius:999px}
+.menu-btn{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative}
+.menu-btn span{position:absolute;left:11px;right:11px;height:1.5px;background:currentColor;transition:transform .3s,opacity .3s}
+.menu-btn span:nth-child(1){top:17px}.menu-btn span:nth-child(2){top:26px}
+.hdr.open .menu-btn span:nth-child(1){transform:translateY(4.5px) rotate(45deg)}
+.hdr.open .menu-btn span:nth-child(2){transform:translateY(-4.5px) rotate(-45deg)}
+@media (max-width:800px){
+  .menu-btn{display:block}
+  .nav{position:fixed;top:68px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:var(--beige);color:var(--ink);padding:8px var(--pad) 28px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:.3s;box-shadow:0 12px 24px rgba(0,0,0,.06)}
+  .nav a{width:100%;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px}
+  .nav .store{border:0;padding:16px 0;color:var(--terra);font-weight:700}
+  .hdr.open .nav{opacity:1;transform:none;pointer-events:auto}
+  .hdr.open{background:var(--beige);color:var(--ink)}
+}
+
+/* Hero */
+.hero{position:relative;height:100svh;min-height:600px;color:#fff;overflow:hidden;background:#3b2a1c}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 50%;filter:saturate(.88) contrast(1.02);transform:scale(1.06);animation:heroZoom 14s ease-out forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,26,20,.35) 0%,rgba(20,26,20,0) 30%,rgba(20,26,20,.15) 55%,rgba(20,26,20,.72) 100%)}
+.hero .wrap{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(56px,10vh,110px)}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(58px,11vw,148px);line-height:.95;letter-spacing:-.02em}
+.hero h1 em{font-style:italic}
+.hero p{margin:22px 0 34px;font-size:clamp(16px,1.8vw,20px);font-weight:400;opacity:.92;max-width:30em}
+.hero .scroll{position:absolute;right:var(--pad);bottom:clamp(56px,10vh,110px);z-index:2;font-size:12px;letter-spacing:.22em;writing-mode:vertical-rl;opacity:.75;display:flex;align-items:center;gap:12px}
+.hero .scroll::after{content:"";width:1px;height:56px;background:linear-gradient(#fff,transparent)}
+@media (max-width:640px){.hero .scroll{display:none}}
+
+/* Story */
+.story{background:var(--beige);padding:clamp(88px,13vw,160px) 0}
+.story .grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,7vw,110px);align-items:center}
+.story figure{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:4px}
+.story figure img{width:100%;height:100%;object-fit:cover;object-position:50% 58%;filter:saturate(.85)}
+.story figcaption{position:absolute;left:18px;bottom:16px;font-family:var(--serif);font-style:italic;color:#fff;font-size:18px;opacity:.9}
+.story .body{margin-top:36px;font-size:clamp(16px,1.5vw,18px);color:#4a463f}
+.story .body p+p{margin-top:22px}
+.story .body strong{color:var(--green);font-weight:600;display:block;margin-top:34px;font-size:clamp(18px,1.8vw,21px);padding-top:28px;border-top:1px solid var(--line)}
+@media (max-width:860px){.story .grid{grid-template-columns:1fr}.story figure{aspect-ratio:4/3}}
+
+/* Name */
+.name{background:var(--green);color:var(--beige);padding:clamp(88px,13vw,160px) 0;overflow:hidden}
+.name .eyebrow{color:#e0a380}
+.name .wordmark{font-weight:800;letter-spacing:.06em;font-size:clamp(64px,17vw,240px);line-height:.9;margin:40px 0 56px;display:flex;color:rgba(245,239,230,.1);user-select:none}
+.name .wordmark .on{color:var(--beige);transition:color .6s}
+.name .wordmark .ward{transition:color .6s}
+.name .wordmark.lit .ward{color:#e0a380}
+.name .cards{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(245,239,230,.18);border-top:1px solid rgba(245,239,230,.18);border-bottom:1px solid rgba(245,239,230,.18)}
+.name .card{background:var(--green);padding:clamp(32px,4vw,52px) clamp(0px,3vw,44px) clamp(32px,4vw,52px) 0}
+.name .card:last-child{padding-left:clamp(24px,4vw,52px)}
+.name .card h3{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4vw,48px);line-height:1.1;margin-bottom:18px}
+.name .card h3 em{color:#e0a380}
+.name .card .lead{font-size:clamp(18px,1.8vw,21px);font-weight:600;margin-bottom:10px}
+.name .card p{opacity:.78;font-size:16px}
+@media (max-width:760px){.name .cards{grid-template-columns:1fr}.name .card:last-child{padding-left:0}}
+
+/* Criteria */
+.criteria{padding:clamp(88px,13vw,160px) 0;background:var(--white)}
+.criteria .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:56px;flex-wrap:wrap}
+.criteria .head p{color:var(--mute);max-width:24em}
+.crit{display:grid;grid-template-columns:repeat(4,1fr);border-top:1.5px solid var(--ink)}
+.crit li{list-style:none;padding:28px 28px 36px 0;border-right:1px solid var(--line)}
+.crit li+li{padding-left:28px}
+.crit li:last-child{border-right:0}
+.crit .no{font-family:var(--serif);font-size:44px;line-height:1;color:var(--terra);display:block;margin-bottom:40px}
+.crit h3{font-size:20px;font-weight:700;letter-spacing:-.02em;margin-bottom:10px;color:var(--green)}
+.crit p{font-size:15.5px;color:#55514a}
+@media (max-width:960px){.crit{grid-template-columns:1fr 1fr}.crit li:nth-child(2){border-right:0}.crit li:nth-child(3){padding-left:0}.crit li:nth-child(n+3){border-top:1px solid var(--line)}}
+@media (max-width:560px){.crit{grid-template-columns:1fr}.crit li,.crit li+li{padding:26px 0 30px;border-right:0}.crit li+li{border-top:1px solid var(--line)}.crit .no{margin-bottom:18px;font-size:38px}}
+
+/* Selection */
+.selection{background:var(--beige);padding:clamp(88px,13vw,160px) 0}
+.selection .head{text-align:center;margin-bottom:44px}
+.tabs{display:flex;justify-content:center;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:transparent;height:48px;padding:0 24px;border-radius:999px;font-weight:700;letter-spacing:.16em;font-size:14px;cursor:pointer;transition:.25s;color:var(--mute)}
+.tab:hover{color:var(--ink);border-color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--green);color:var(--beige);border-color:var(--green)}
+.cat-desc{text-align:center;color:var(--mute);margin-bottom:44px;min-height:1.7em}
+.cat-desc b{color:var(--green);font-weight:600}
+.panel{display:none;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px)}
+.panel.active{display:grid;animation:fadeUp .6s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.prod{background:var(--white);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.prod .thumb{position:relative;width:100%;aspect-ratio:1/1;background:var(--beige-d);overflow:hidden}
+.prod .thumb image-slot,.prod .thumb img{position:absolute;inset:0;display:block;width:100%!important;height:100%!important;object-fit:cover}
+.prod .info{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.prod .tag{font-size:11.5px;font-weight:700;letter-spacing:.18em;color:var(--terra);margin-bottom:8px}
+.prod h3{font-size:18px;font-weight:700;letter-spacing:-.02em;margin-bottom:12px}
+.prod .desc{font-size:14.5px;color:#55514a;padding-top:12px;border-top:1px solid var(--line);flex:1;line-height:1.65}
+.prod .buy{margin-top:20px;height:46px;border-radius:999px;border:1px solid var(--ink);display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;transition:.25s}
+.prod .buy:hover{background:var(--terra);border-color:var(--terra);color:#fff}
+.selection .more{text-align:center;margin-top:56px}
+@media (max-width:900px){.panel.active{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){
+  .panel.active{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:80%;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--pad)*-1);padding:0 var(--pad) 8px;scrollbar-width:none}
+  .panel.active::-webkit-scrollbar{display:none}
+  .prod{scroll-snap-align:start}
+}
+
+/* Fulfillment */
+.fulfill{background:var(--green-d);color:var(--beige);padding:clamp(88px,12vw,150px) 0;position:relative;overflow:hidden}
+.fulfill .eyebrow{color:#e0a380}
+.fulfill .grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,7vw,100px);align-items:start}
+.fulfill .intro p{margin-top:24px;opacity:.78;font-size:17px;max-width:26em}
+.fulfill .badge{display:inline-flex;align-items:center;gap:10px;margin-top:32px;padding:10px 18px 10px 14px;border:1px solid rgba(245,239,230,.25);border-radius:999px;font-size:14px;font-weight:600}
+.fulfill .badge i{width:8px;height:8px;border-radius:50%;background:#7fc79a;box-shadow:0 0 0 4px rgba(127,199,154,.2)}
+.flow{list-style:none;position:relative}
+.flow li{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid rgba(245,239,230,.14)}
+.flow li:first-child{border-top:1px solid rgba(245,239,230,.14)}
+.flow .k{font-family:var(--serif);font-style:italic;font-size:26px;color:#e0a380;line-height:1.2}
+.flow h3{font-size:19px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.flow p{opacity:.72;font-size:15.5px}
+@media (max-width:860px){.fulfill .grid{grid-template-columns:1fr}}
+
+/* Partnership */
+.partner{background:var(--beige);padding:clamp(88px,12vw,150px) 0}
+.partner .grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,7vw,100px)}
+.partner .intro p{margin-top:24px;color:#4a463f;font-size:17px}
+.partner .types{margin-top:36px;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.partner .types div{padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-weight:600;color:var(--green)}
+.partner .types div span{color:var(--mute);font-weight:400;font-size:14px}
+form.inq{background:var(--white);border-radius:8px;padding:clamp(24px,4vw,48px);display:grid;grid-template-columns:1fr 1fr;gap:22px 20px}
+.f{display:flex;flex-direction:column;gap:8px}
+.f.full{grid-column:1/-1}
+.f label,.f legend{font-size:13.5px;font-weight:600;color:#4a463f}
+.f label b,.f legend b{color:var(--terra);font-weight:600}
+.f input,.f textarea{height:52px;border:1px solid var(--line);border-radius:6px;padding:0 16px;background:#fcfaf7;font-size:16px;transition:border .2s,background .2s;outline:none}
+.f textarea{height:140px;padding:14px 16px;resize:vertical;line-height:1.6}
+.f input:focus,.f textarea:focus{border-color:var(--green);background:#fff}
+.f input::placeholder,.f textarea::placeholder{color:#aaa49a}
+fieldset.f{border:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-flex;align-items:center;height:44px;padding:0 18px;border:1px solid var(--line);border-radius:999px;font-size:15px;font-weight:500;color:#4a463f;transition:.2s;background:#fcfaf7}
+.chips input:checked+span{background:var(--green);border-color:var(--green);color:#fff}
+.chips input:focus-visible+span{outline:2px solid var(--terra);outline-offset:2px}
+.agree{grid-column:1/-1;display:flex;gap:12px;align-items:flex-start;font-size:14px;color:#55514a;padding:16px;background:var(--beige);border-radius:6px}
+.agree input{width:20px;height:20px;accent-color:var(--green);margin-top:2px;flex:none}
+.agree a{text-decoration:underline;text-underline-offset:3px}
+form.inq .submit{grid-column:1/-1;justify-content:center;height:58px;font-size:17px}
+.form-note{grid-column:1/-1;font-size:13px;color:var(--mute);text-align:center;margin-top:-6px}
+@media (max-width:860px){.partner .grid{grid-template-columns:1fr}}
+@media (max-width:560px){form.inq{grid-template-columns:1fr}}
+
+/* Footer */
+footer{background:#1f2a23;color:rgba(245,239,230,.7);padding:72px 0 40px;font-size:14px}
+footer .top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid rgba(245,239,230,.12)}
+footer .logo{color:var(--beige)}
+footer .slogan{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--beige);margin-top:10px}
+footer .links{display:flex;gap:24px;align-items:flex-start;font-weight:600;color:var(--beige)}
+footer .links a:hover{color:#e0a380}
+footer dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 40px;padding:32px 0;line-height:1.8}
+footer dl div{display:flex;gap:12px}
+footer dt{color:rgba(245,239,230,.45);flex:none;min-width:116px}
+footer .copy{font-size:12.5px;color:rgba(245,239,230,.4);letter-spacing:.02em}
+
+/* Toast & Modal */
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:14px 22px;border-radius:999px;font-size:15px;opacity:0;pointer-events:none;transition:.35s;z-index:80;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+dialog{border:0;border-radius:10px;max-width:640px;width:calc(100% - 32px);padding:0;color:var(--ink)}
+dialog::backdrop{background:rgba(20,26,20,.55)}
+dialog .in{padding:36px 32px;max-height:76vh;overflow:auto}
+dialog h3{font-size:22px;margin-bottom:16px;letter-spacing:-.02em}
+dialog h4{font-size:15px;margin:20px 0 6px;color:var(--green)}
+dialog p,dialog li{font-size:14.5px;color:#4a463f}
+dialog ul{padding-left:18px}
+dialog .close{position:sticky;bottom:0;display:block;width:100%;height:56px;border:0;background:var(--green);color:#fff;font-weight:600;cursor:pointer}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="ONWARD 홈">ONWARD<i></i></a>
+    <nav class="nav" id="nav">
+      <a href="#story">Story</a>
+      <a href="#selection">Selection</a>
+      <a href="#partnership">Partnership</a>
+      <a href="#" class="store js-store" target="_blank" rel="noopener">Store ↗</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 1. HERO -->
+  <section class="hero" data-screen-label="01 Hero">
+    <img src="assets/walk-sunset.jpg" alt="해 질 녘 산책길을 함께 걷는 보호자와 반려견의 뒷모습">
+    <div class="wrap">
+      <h1>Onward,<br><em>Together.</em></h1>
+      <p>지키며 나아가는 모든 걸음, 온워드가 함께합니다.</p>
+      <div><a href="#" class="btn btn-terra js-store" target="_blank" rel="noopener">스마트스토어 바로가기 <span class="arr">→</span></a></div>
+    </div>
+    <div class="scroll">SCROLL</div>
+  </section>
+
+  <!-- 2. STORY -->
+  <section class="story" id="story" data-screen-label="02 Story">
+    <div class="wrap grid">
+      <figure class="reveal">
+        <img src="assets/walk-park.jpg" alt="낙엽 깔린 숲길을 반려견들과 걷는 보호자" loading="lazy">
+        <figcaption>Every step, side by side.</figcaption>
+      </figure>
+      <div class="reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="title">함께 걷는 한 걸음을 위하여</h2>
+        <div class="body">
+          <p>강아지의 시간은 우리보다 빠르게 흐릅니다.<br>그래서 함께 걷는 한 걸음 한 걸음이 소중합니다.</p>
+          <p>반려용품은 너무 많고, 무엇이 좋은지 고르기는 어렵습니다.<br>온워드는 보호자 대신 꼼꼼히 비교하고, 직접 써보고, 믿을 수 있는 것만 고릅니다.</p>
+          <strong>좋은 물건을 고르는 것도 곁을 지키는 일이니까요.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. NAME -->
+  <section class="name" data-screen-label="03 Name">
+    <div class="wrap">
+      <span class="eyebrow reveal">The Name</span>
+      <h2 class="title reveal">ONWARD에 담긴 두 가지 약속</h2>
+      <div class="wordmark" id="wordmark" aria-hidden="true"><span class="on">ON</span><span class="ward">WARD</span></div>
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Onward.</h3>
+          <div class="lead">앞으로, 함께 나아갑니다.</div>
+          <p>산책길에서 반 발짝 앞서 뒤를 돌아보는 강아지처럼.</p>
+        </div>
+        <div class="card reveal">
+          <h3>On <em>+</em> Ward.</h3>
+          <div class="lead">지킴이 늘 켜져 있습니다.</div>
+          <p>보호자의 마음으로 곁을 지킵니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CRITERIA -->
+  <section class="criteria" data-screen-label="04 Criteria">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <span class="eyebrow">How We Choose</span>
+          <h2 class="title">온워드는 이렇게 고릅니다</h2>
+        </div>
+        <p>네 가지 기준을 모두 통과한 제품만 셀렉션에 오릅니다.</p>
+      </div>
+      <ol class="crit reveal">
+        <li><span class="no">01</span><h3>직접 써봅니다</h3><p>우리 집 강아지에게 쓰지 않을 물건은 팔지 않습니다.</p></li>
+        <li><span class="no">02</span><h3>정품만 취급합니다</h3><p>정식 유통 경로를 거친 제품만 소개합니다.</p></li>
+        <li><span class="no">03</span><h3>소재와 안전을 확인합니다</h3><p>무엇으로 만들었는지, 어디서 왔는지 숨기지 않습니다.</p></li>
+        <li><span class="no">04</span><h3>오래 쓸 수 있는지 봅니다</h3><p>오래 함께할 수 있는 물건을 고릅니다.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. SELECTION -->
+  <section class="selection" id="selection" data-screen-label="05 Selection">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Curated Lines</span>
+        <h2 class="title">온워드의 셀렉션</h2>
+      </div>
+      <div class="tabs reveal" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" data-cat="walk">WALK</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="ward">WARD</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="rest">REST</button>
+      </div>
+      <p class="cat-desc" id="catDesc"></p>
+      <div id="panels"></div>
+      <div class="more"><a href="#" class="btn btn-terra js-store" target="_blank" rel="noopener">스마트스토어에서 전체 보기 <span class="arr">→</span></a></div>
+    </div>
+  </section>
+
+  <!-- 6. FULFILLMENT (3PL) -->
+  <section class="fulfill" data-screen-label="06 Fulfillment">
+    <div class="wrap grid">
+      <div class="intro reveal">
+        <span class="eyebrow">Fulfillment</span>
+        <h2 class="title">고른 물건을,<br>안전하게 전합니다</h2>
+        <p>온워드는 전문 3PL 물류센터와 계약을 맺고 입고부터 출고까지 체계적으로 관리합니다. 파트너사와 고객 모두 안심하고 받아볼 수 있도록.</p>
+        <div class="badge"><i></i>전문 3PL 물류센터 운영 중</div>
+      </div>
+      <ol class="flow reveal">
+        <li><span class="k">In</span><div><h3>입고 · 검수</h3><p>정식 유통 경로로 들어온 제품을 확인하고 입고합니다.</p></div></li>
+        <li><span class="k">Keep</span><div><h3>보관 · 재고 관리</h3><p>전문 물류센터에서 제품을 보관하고 재고를 관리합니다.</p></div></li>
+        <li><span class="k">Out</span><div><h3>포장 · 출고</h3><p>스마트스토어 주문과 폐쇄몰 주문 모두 물류센터에서 출고합니다.</p></div></li>
+        <li><span class="k">B2B</span><div><h3>대량 · 단체 출고 대응</h3><p>복지몰, 임직원몰, 기업 단체 구매 물량도 함께 협의합니다.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7. PARTNERSHIP -->
+  <section class="partner" id="partnership" data-screen-label="07 Partnership">
+    <div class="wrap grid">
+      <div class="intro reveal">
+        <span class="eyebrow">Partnership</span>
+        <h2 class="title">함께 나아갈<br>파트너를 찾습니다</h2>
+        <p>복지몰, 임직원몰, 기업 단체 구매, 유통 제휴 문의를 기다립니다.</p>
+        <div class="types">
+          <div>폐쇄몰 입점 <span>복지몰 · 임직원몰</span></div>
+          <div>단체 구매 <span>기업 · 기관</span></div>
+          <div>유통 제휴 <span>B2B 공급</span></div>
+        </div>
+      </div>
+      <form class="inq reveal" id="inqForm" novalidate>
+        <div class="f"><label for="company">회사명 <b>*</b></label><input id="company" name="company" required placeholder="회사명을 입력해 주세요"></div>
+        <div class="f"><label for="person">담당자명 <b>*</b></label><input id="person" name="person" required placeholder="성함"></div>
+        <div class="f"><label for="phone">연락처 <b>*</b></label><input id="phone" name="phone" type="tel" inputmode="tel" required placeholder="010-0000-0000"></div>
+        <div class="f"><label for="email">이메일 <b>*</b></label><input id="email" name="email" type="email" required placeholder="name@company.com"></div>
+        <fieldset class="f full">
+          <legend>문의 유형 <b>*</b></legend>
+          <div class="chips">
+            <label><input type="radio" name="type" value="폐쇄몰 입점" checked><span>폐쇄몰 입점</span></label>
+            <label><input type="radio" name="type" value="단체 구매"><span>단체 구매</span></label>
+            <label><input type="radio" name="type" value="유통 제휴"><span>유통 제휴</span></label>
+            <label><input type="radio" name="type" value="기타"><span>기타</span></label>
+          </div>
+        </fieldset>
+        <div class="f full"><label for="msg">문의 내용 <b>*</b></label><textarea id="msg" name="msg" required placeholder="필요하신 품목, 예상 수량, 일정 등을 적어 주시면 빠르게 안내드리겠습니다."></textarea></div>
+        <label class="agree"><input type="checkbox" id="agree" required><span>[필수] 문의 응대를 위한 개인정보(회사명, 담당자명, 연락처, 이메일) 수집·이용에 동의합니다. 수집된 정보는 문의 처리 후 지체 없이 파기합니다. <a href="#" class="js-privacy">자세히 보기</a></span></label>
+        <button class="btn btn-terra submit" type="submit">문의 보내기 <span class="arr">→</span></button>
+        <p class="form-note">영업일 기준 1~2일 내 회신드립니다.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer data-screen-label="08 Footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="logo">ONWARD<i></i></div>
+        <div class="slogan">Onward, Together.</div>
+      </div>
+      <div class="links">
+        <a href="#" class="js-privacy">개인정보처리방침</a>
+        <a href="#" class="js-store" target="_blank" rel="noopener">스마트스토어 바로가기 ↗</a>
+      </div>
+    </div>
+    <dl>
+      <div><dt>상호</dt><dd>주식회사 온워드컴퍼니</dd></div>
+      <div><dt>대표자</dt><dd>김요한</dd></div>
+      <div><dt>사업자등록번호</dt><dd>494-86-03507</dd></div>
+      <div><dt>통신판매업신고</dt><dd class="js-mailorder">[제0000-서울영등포-0000호]</dd></div>
+      <div><dt>주소</dt><dd>서울특별시 영등포구 양평로 24, 5층 501호 (당산동6가, 수정빌딩)</dd></div>
+      <div><dt>이메일 / 연락처</dt><dd><span class="js-email">[이메일]</span> / <span class="js-phone">[전화번호]</span></dd></div>
+    </dl>
+    <p class="copy">© 2026 Onward Company Co., Ltd. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<dialog id="privacy">
+  <div class="in">
+    <h3>개인정보처리방침</h3>
+    <p>주식회사 온워드컴퍼니(이하 '회사')는 이용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 등 관련 법령을 준수합니다.</p>
+    <h4>1. 수집 항목</h4><p>회사명, 담당자명, 연락처, 이메일, 문의 내용</p>
+    <h4>2. 수집 목적</h4><p>기업 제휴 · 입점 문의 확인 및 회신</p>
+    <h4>3. 보유 및 이용 기간</h4><p>문의 처리 완료 후 지체 없이 파기합니다. 단, 관련 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관합니다.</p>
+    <h4>4. 동의 거부 권리</h4><p>이용자는 개인정보 수집·이용에 동의하지 않을 수 있으며, 이 경우 문의 접수가 제한될 수 있습니다.</p>
+    <h4>5. 개인정보 보호책임자</h4><p>주식회사 온워드컴퍼니 · <span class="js-email">[이메일]</span></p>
+  </div>
+  <button class="close" id="privacyClose">닫기</button>
+</dialog>
+
+<script src="image_slot.js"></script>
+<script>
+/* ===== 사이트 설정 (여기만 바꾸면 전체 반영) ===== */
+const SITE = {
+  storeUrl: "#",                       // 스마트스토어 URL
+  email: "[대표 이메일]",               // 문의 접수 이메일
+  formEndpoint: "https://formspree.io/f/mzednovk",                    // Formspree 주소 (예: "https://formspree.io/f/xxxxxxx") — 넣으면 문의가 이메일로 바로 들어옵니다
+  phone: "[전화번호]",
+  mailOrderNo: "[제0000-서울영등포-0000호]"
+};
+const CATS = {
+  walk: { label:"함께 걷는 시간을 위한 셀렉션", sub:"리드줄 · 하네스 · 산책 가방" },
+  ward: { label:"곁을 지키는 안전 셀렉션", sub:"야간 반사 용품 · 인식표" },
+  rest: { label:"걷고 돌아와 쉬는 시간을 위한 셀렉션", sub:"방석 · 하우스" }
+};
+/* 상품 정보 (가격 표시 없음)
+   name: 상품명 / desc: 상품 설명 / url: 스마트스토어 상품 링크
+   img : 이미지 파일 경로 (예: "assets/products/walk-1.jpg")
+         비워두면 드래그 앤 드롭 칸이 표시됩니다 */
+const P = () => ({ name:"[상품명]", desc:"[상품 설명]", url:"#", img:"" });
+const PRODUCTS = {
+  walk: [
+    {
+      name:"닥터뉴토 아이큐어 관절 영양제 콘드로이친 30정",
+      desc:"수의사 자문으로 개발된 반려견 관절 전용 영양제입니다. 콘드로이친과 글루코사민을 담아, 오래 함께 걸을 수 있도록 관절과 연골 건강을 챙깁니다.",
+      url:"https://www.dspetmall.com/goods/goods_view.php?goodsNo=1000000347",
+      img:"assets/products/walk-1.jpg"
+    },
+    {
+      name:"닥터뉴토 탄단지 프로틴 케어 펫밀크 오리지널 180ml",
+      desc:"1A등급 원유에 동·식물성 단백질과 BCAA를 더한 펫밀크입니다. 활동량 많은 반려견의 근육 건강을 돕고, 강아지와 고양이 모두 먹을 수 있습니다.",
+      url:"https://www.dspetmall.com/goods/goods_view.php?goodsNo=1000000009",
+      img:"assets/products/walk-2.jpg"
+    },
+    {
+      name:"바이오펫랩 조인트프로 2.0 관절 영양제 180g",
+      desc:"슬개골과 관절 건강을 위한 반려견 관절 영양제입니다. 콘드로이친과 초록입홍합 등을 담아, 무릎과 근육까지 함께 챙길 수 있습니다.",
+      url:"https://www.coupang.com/vp/products/9479090683?itemId=28220890505&vendorItemId=95174835675",
+      img:"assets/products/walk-3.jpg"
+    }
+  ],
+  ward: [
+    {
+      name:"뽀시래기 고양이 엘라이신 플러스 70g",
+      desc:"면역과 항산화를 위한 고양이 전용 분말 영양제입니다. 평소 먹는 사료나 습식 위에 가볍게 뿌려 주기만 하면 되어 매일 꾸준히 챙기기 좋습니다.",
+      url:"https://www.coupang.com/vp/products/9417145560?itemId=27984869067&vendorItemId=94942567781",
+      img:"assets/products/ward-1.jpg"
+    },
+    {
+      name:"닥터뉴토 프레시케어 원조 구강 트릿 2종 세트 (북어/치킨)",
+      desc:"구강 유산균을 담은 반려견 구강 케어 트릿입니다. 북어와 치킨 두 가지 맛을 미니 사이즈로 만들어, 작은 아이도 간식처럼 즐기며 입속 건강을 챙길 수 있습니다.",
+      url:"https://www.dspetmall.com/goods/goods_view.php?goodsNo=1000000034",
+      img:"assets/products/ward-2.jpg"
+    },
+    {
+      name:"굿보이 소간 트위스틱 S 1P",
+      desc:"소간을 저온건조해 꼬아 만든 반려견 스틱 간식입니다. 단단하게 오래 씹을 수 있어 씹는 욕구를 채워 주고, 혼자 있는 시간도 지루하지 않게 곁을 지킵니다.",
+      url:"https://shinsegaemall.ssg.com/item/itemView.ssg?itemId=1000532962569&siteNo=6004&salestrNo=6005",
+      img:"assets/products/ward-3.jpg"
+    }
+  ],
+  rest: [
+    {
+      name:"닥터뉴토 뉴트리케어 유동식 스틱 리커버리 450g (30개입)",
+      desc:"기력이 떨어진 반려견을 위한 유동식 주식입니다. 스틱 하나로 간편하게 급여할 수 있어, 회복이 필요한 시기에 부담 없이 챙길 수 있습니다.",
+      url:"https://www.dspetmall.com/goods/goods_view.php?goodsNo=1000000043",
+      img:"assets/products/rest-1.jpg"
+    },
+    {
+      name:"닥터뉴토 올라이즈 하루통살 촉촉 닭안심",
+      desc:"1등급 원료 닭안심으로 만든 저칼로리 통살 간식입니다. 산책 후 보상이나 하루 간식으로 부담 없이 주기 좋고, 강아지와 고양이 모두 먹을 수 있습니다.",
+      url:"https://www.dspetmall.com/goods/goods_view.php?goodsNo=1000000145",
+      img:"assets/products/rest-2.jpg"
+    },
+    {
+      name:"네이처포우 수제비누 5종",
+      desc:"자연유래 원료로 만든 강아지 천연비누 선물 세트입니다. 클린바, 실키바, 수딩바, 리커버리바 등 피부 상태에 맞춰 골라 쓸 수 있어, 산책 후 목욕 시간을 순하게 마무리합니다.",
+      url:"#",
+      img:"assets/products/rest-3.png"
+    }
+  ]
+};
+
+/* apply settings */
+document.querySelectorAll('.js-store').forEach(a=>a.href=SITE.storeUrl);
+document.querySelectorAll('.js-email').forEach(e=>e.textContent=SITE.email);
+document.querySelectorAll('.js-phone').forEach(e=>e.textContent=SITE.phone);
+document.querySelectorAll('.js-mailorder').forEach(e=>e.textContent=SITE.mailOrderNo);
+
+/* selection panels */
+const panelsEl=document.getElementById('panels');
+Object.entries(PRODUCTS).forEach(([cat,list])=>{
+  const p=document.createElement('div');
+  p.className='panel'+(cat==='walk'?' active':'');
+  p.dataset.cat=cat; p.setAttribute('role','tabpanel');
+  p.innerHTML=list.map((it,i)=>`
+    <article class="prod">
+      <div class="thumb">${it.img
+        ? `<img src="${it.img}" alt="${it.name}" loading="lazy">`
+        : `<image-slot id="prod-${cat}-${i+1}" placeholder="상품 이미지 (1:1)" shape="rect"></image-slot>`}</div>
+      <div class="info">
+        <div class="tag">${cat.toUpperCase()}</div>
+        <h3>${it.name}</h3>
+        <p class="desc">${it.desc}</p>
+        <a class="buy" href="${it.url}" target="_blank" rel="noopener">구매하기 <span>↗</span></a>
+      </div>
+    </article>`).join('');
+  panelsEl.appendChild(p);
+});
+const catDesc=document.getElementById('catDesc');
+function setCat(cat){
+  document.querySelectorAll('.tab').forEach(t=>t.setAttribute('aria-selected',t.dataset.cat===cat));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.dataset.cat===cat));
+  catDesc.innerHTML=`<b>${CATS[cat].label}</b> · ${CATS[cat].sub}`;
+}
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>setCat(t.dataset.cat)));
+setCat('walk');
+
+/* header */
+const hdr=document.getElementById('hdr');
+const onScroll=()=>hdr.classList.toggle('solid',window.scrollY>window.innerHeight*0.7);
+onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+const menuBtn=document.getElementById('menuBtn');
+menuBtn.addEventListener('click',()=>{
+  const o=hdr.classList.toggle('open'); menuBtn.setAttribute('aria-expanded',o);
+});
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>{hdr.classList.remove('open');menuBtn.setAttribute('aria-expanded',false)}));
+
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const wm=document.getElementById('wordmark');
+new IntersectionObserver(es=>es.forEach(e=>wm.classList.toggle('lit',e.isIntersecting)),{threshold:.6}).observe(wm);
+
+/* toast */
+const toast=document.getElementById('toast');
+function showToast(m){toast.textContent=m;toast.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove('show'),2600)}
+
+/* privacy */
+const dlg=document.getElementById('privacy');
+document.querySelectorAll('.js-privacy').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();dlg.showModal()}));
+document.getElementById('privacyClose').addEventListener('click',()=>dlg.close());
+
+/* form → 메일 앱으로 전송 (백엔드 연동 전 임시) */
+document.getElementById('inqForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target;
+  const bad=[...f.querySelectorAll('[required]')].find(el=>el.type==='checkbox'?!el.checked:!el.value.trim()||(el.type==='email'&&!/^\S+@\S+\.\S+$/.test(el.value)));
+  if(bad){
+    showToast(bad.id==='agree'?'개인정보 수집에 동의해 주세요.':'필수 항목을 확인해 주세요.');
+    if(bad.focus)bad.focus(); return;
+  }
+  const d=new FormData(f);
+  const body=`회사명: ${d.get('company')}\n담당자명: ${d.get('person')}\n연락처: ${d.get('phone')}\n이메일: ${d.get('email')}\n문의 유형: ${d.get('type')}\n\n${d.get('msg')}`;
+  const subject='[온워드 제휴문의] '+d.get('type')+' - '+d.get('company');
+  if(SITE.formEndpoint){
+    const btn=f.querySelector('.submit'); const label=btn.innerHTML;
+    btn.disabled=true; btn.textContent='보내는 중…';
+    fetch(SITE.formEndpoint,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},
+      body:JSON.stringify({_subject:subject,_replyto:d.get('email'),회사명:d.get('company'),담당자명:d.get('person'),연락처:d.get('phone'),email:d.get('email'),문의유형:d.get('type'),문의내용:d.get('msg')})})
+    .then(r=>{ if(!r.ok) throw 0; f.reset(); showToast('문의가 접수되었습니다. 영업일 기준 1~2일 내 회신드리겠습니다.'); })
+    .catch(()=>showToast('전송에 실패했습니다. 잠시 후 다시 시도해 주세요.'))
+    .finally(()=>{btn.disabled=false; btn.innerHTML=label;});
+    return;
+  }
+  const href=`mailto:${SITE.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  showToast('문의가 준비되었습니다. 메일 앱에서 전송해 주세요.');
+  if(SITE.email.includes('@')) window.location.href=href;
+});
+</script>
+</body>
+</html>
